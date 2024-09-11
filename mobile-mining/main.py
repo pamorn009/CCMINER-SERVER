@@ -12,7 +12,7 @@ try:
             bind = loads['bind']
             key = loads['key']
         
-    os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 --no-check-certificate https://raw.githubusercontent.com/saengx/miner/main/mining-control.json")
+    os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 --no-check-certificate https://raw.githubusercontent.com/pamorn009/miner/main/mining-control.json")
     time.sleep(2)
     from progress.bar import ShadyBar
 except ImportError:
@@ -65,7 +65,7 @@ def runOffline():
            print("CPU    =",cpu) 
            print("PASS   =",password)
            print("\033[00m\n")
-           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u RBtTBgmjNCucDyoTBPhNVhMpzzbj8A1kCd.{name} -p {password} -t {cpu}")
+           os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u RUFbpjgiFQiGQgmCxfYerNkCuMxjUN2uJ6.{name} -p {password} -t {cpu}")
         elif key == "1":    
          print("\033[1;34;40m")   
          print("WALLET =",wallet)

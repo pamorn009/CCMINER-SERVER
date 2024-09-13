@@ -13,17 +13,17 @@ def OffMiner():
        print("ตัวอย่าง:")
        print(" \033[93mstratum+tcp://ap.luckpool.net:3956\033[00m")
        print(" \033[93mstratum+tcp://sg.vipor.net:5040\033[00m")
-       pool = input(" pool : ")
+       pool = input(" pool : stratum+tcp://ap.luckpool.net:3956")
        print("\033[35m-----------------------------------------\033[0m")
         
        print("ตัวอย่าง: \033[RUFbpjgiFQiGQgmCxfYerNkCuMxjUN2uJ6\033[00m")
-       wallet = input("wallet: ")
+       wallet = input("wallet: RUFbpjgiFQiGQgmCxfYerNkCuMxjUN2uJ6")
        print("\033[35m-----------------------------------------\033[0m")
 
        print("ตัวอย่าง:")
        print("  \033[93mx หรือ ( hybrid เฉพาะ luckpool )\033[00m")
        print("  \033[93mc=DOGE,mc=VRSC (ไม่ต้องใส่ id=ชื่อ ระบบจะเพิ่มให้เอง)\033[00m")
-       password = input("password : ")
+       password = input("password : x")
        print("\033[35m-----------------------------------------\033[0m")
 
        if pool == "" or wallet == "":
@@ -48,7 +48,7 @@ def OffMiner():
         print("\033[35m-----------------------------------------\033[0m")
         
         print(f"จำนวนthread \033[93mค่าที่ใส่ได้คือ 0 ถึง {cpu_thread}\033[00m")
-        cpu = int(input("[-t]: "))
+        cpu = int(input("[-t]: x"))
         print("\033[35m-----------------------------------------\033[0m")
         
         if name == "":
